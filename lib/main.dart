@@ -30,6 +30,52 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Logo(),
+          Container(
+            margin: EdgeInsets.all(30),
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.8),
+              borderRadius: BorderRadius.circular(25),
+            ),
+            child: Column(
+              children: <Widget>[
+                SizedBox(
+                  height: 35,
+                ),
+                Text(
+                  "O valor do seu TMB",
+                  style: TextStyle(
+                    color: Theme.of(context).primaryColor,
+                    fontSize: 30,
+                    fontFamily: "Big Shoulders Display",
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin: EdgeInsets.all(25),
+                  height: 50,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.8),
+                    borderRadius: BorderRadius.circular(60),
+                  ),
+                  child: FlatButton(
+                    child: Text(
+                      "CALCULAR NOVAMENTE",
+                      style: TextStyle(
+                        color: Theme.of(context).primaryColor,
+                        fontSize: 25,
+                        fontFamily: "Big Shoulders Display",
+                      ),
+                    ),
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
+          ),
           Input(
             label: "Peso",
           ),
@@ -38,6 +84,25 @@ class HomePage extends StatelessWidget {
           ),
           Input(
             label: "Idade",
+          ),
+          Container(
+            margin: EdgeInsets.all(25),
+            height: 50,
+            decoration: BoxDecoration(
+              color: Colors.white.withOpacity(0.8),
+              borderRadius: BorderRadius.circular(60),
+            ),
+            child: FlatButton(
+              child: Text(
+                "CALCULAR",
+                style: TextStyle(
+                  color: Theme.of(context).primaryColor,
+                  fontSize: 25,
+                  fontFamily: "Big Shoulders Display",
+                ),
+              ),
+              onPressed: () {},
+            ),
           ),
         ],
       ),

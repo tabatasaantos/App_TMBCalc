@@ -4,7 +4,7 @@ class Logo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
-      SizedBox(height: 25),
+      SizedBox(height: 10),
       Image.asset(
         "assets/images/doctor.png",
         height: 200,

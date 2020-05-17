@@ -4,12 +4,12 @@ class Logo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(children: <Widget>[
-      SizedBox(height: 10),
+      SizedBox(height: 25),
       Image.asset(
         "assets/images/doctor.png",
-        height: 200,
+        height: 170,
       ),
-      SizedBox(height: 10),
+      SizedBox(height: 5),
       Text("Calculadora TMB",
           style: TextStyle(
               color: Colors.white,

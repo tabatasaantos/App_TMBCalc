@@ -6,7 +6,6 @@ class SubmitForm extends StatelessWidget {
   var pesoController = new TextEditingController();
   var alturaController = new TextEditingController();
   var idadeController = new TextEditingController();
-
   var busy = false;
   Function submitFunc;
 
@@ -47,7 +46,7 @@ class SubmitForm extends StatelessWidget {
           height: 25,
         ),
         LoadingButton(
-          busy: false,
+          busy: busy,
           func: submitFunc,
           text: "CALCULAR",
           invert: false,

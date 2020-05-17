@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'loading-button.widget.dart';
 
 class Success extends StatelessWidget {

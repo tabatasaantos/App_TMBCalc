@@ -30,6 +30,7 @@ class Input extends StatelessWidget {
           child: TextFormField(
             keyboardType: TextInputType.number,
             controller: ctrl,
+            cursorColor: Colors.cyan,
             style: TextStyle(
               color: Colors.white,
               fontSize: 45,
